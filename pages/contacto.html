@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Contacto - Pelo x Pelo</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <section class="topbar">
+            <!-- barra superior que sirve para aclarar descuentos o mensajes importantes -->
+            <p>¡Aprovechá las 6 cuotas sin interes!</p>
+        </section>
+        <nav class="navbar navbar-expand-md bg-white">
+            <!-- logo de pagina -->
+            <!-- link al home -->
+            <!-- menu de la pagina -->
+            <!-- cuando sea responsive se va a minimizar en la esquina superior izquierda -->
+            <!-- la idea es que quede fijo en la parte superior todo el tiempo -->
+            <div class="container-fluid">
+                <a class="navbar-brand ps-3" href="../index.html"><img src="../img/logodos.png" alt="Logo de la Marca"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pe-5 ps-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-bold align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pelucas.html">PELUCAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="apliques.html">APLIQUES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quienessomos.html">QUIENES SOMOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="introcontacto">
+            <h1>Atención Personalizada</h1>
+            <p>Queremos brindarte la mejor atención siempre, por eso atendemos unicamente con cita previa.</p>
+            <p>Contactate con nosotros por el medio que prefieras y te responderemos a la brevedad.</p>
+        </section>
+        <section class="datosyformulario">
+            <article class="columnadatos">
+                <div class="linea">
+                    <img src="../img/iconoa.png" alt="Teléfono" class="logocontacto">
+                    <p>541123917185</p>
+                </div>
+                <div class="linea">
+                    <img src="../img/iconob.png" alt="Correo Electronico" class="logocontacto">
+                    <p>peloxpelo@gmail.com</p>
+                </div>
+                <div class="linea">
+                    <img src="../img/iconoc.png" alt="Ubicación" class="logocontacto">
+                    <p>Palermo, CABA, Argentina</p>
+                </div>
+                <div class="linea">
+                    <img src="../img/iconod.png" alt="Instagram" class="logocontacto">
+                    <a href="https://www.instagram.com/peloxpelo.arg/?hl=es">Seguinos en Instagram</a>
+                </div>
+            </article>
+            <article class="columnaformulario">
+                <!-- agregar un formulario para cargar datos -->
+                <!-- pongo imagen para escalar pagina pero despues va a ir formulario -->
+                <!-- el formulario llevaria Nombre Email Telefono y Mensaje -->
+                <h2>Contactanos</h2>
+                <form class="formulario" action="" method="POST">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" maxlength="40" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]+" required>
+                    </div>
+                    <div>
+                        <label for="texto">Mensaje</label>
+                        <textarea id="texto" name="texto" rows="4" cols="50"></textarea>
+                    </div>
+                    <input class="enviar" type="submit" value="Enviar">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="pie">
+        <!-- division en 3 columnas -->
+        <section class="columuno">
+            <!-- datos de contacto -->
+            <h4>CONTACTANOS</h4>
+            <article class="linea">
+                <img src="../img/iconoa.png" alt="Teléfono" class="logocontacto">
+                <p class="datocontacto">541112341234</p>
+            </article>
+            <article class="linea">
+                <img src="../img/iconob.png" alt="Correo Electronico" class="logocontacto">
+                <p class="datocontacto">peloxpelo@gmail.com</p>
+            </article>
+            <article class="linea">
+                <img src="../img/iconoc.png" alt="Ubicación" class="logocontacto">
+                <p class="datocontacto">Palermo, CABA, Argentina</p>
+            </article>
+        </section>
+        <section class="columdos">
+            <!-- menu navegación -->
+            <h4>NAVEGACIÓN</h4>
+            <article class="menupie">
+                <ul>
+                    <li>
+                        <!-- link al home -->
+                        <a href="../index.html">HOME</a>
+                    </li>
+                    <li>
+                        <!-- link a pelucas -->
+                        <a href="pelucas.html">PELUCAS</a>
+                    </li>
+                    <li>
+                        <!-- link a apliques -->
+                        <a href="apliques.html">APLIQUES</a>
+                    </li>
+                    <li>
+                        <!-- link a contacto -->
+                        <a href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li>
+                        <!-- link a quienes somos -->
+                        <a href="quienessomos.html">QUIENES SOMOS</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="columtres">
+            <!-- link a redes sociales -->
+            <article class="rrss">
+                <h4>REDES SOCIALES</h4>
+                <a href="https://www.instagram.com/peloxpelo.arg/?hl=es"><img src="../img/redesa.png" alt="Instagram" class="redes"></a>
+                <a href="https://www.facebook.com/profile.php?id=100087120391569"><img src="../img/redesb.png" alt="Facebook" class="redes"></a>
+            </article>
+            <!-- medios de pago -->
+            <article class="mediospago">
+                <h4>MEDIOS DE PAGO</h4>
+                <img src="../img/pagoa.png" alt="">
+                <img src="../img/pagob.png" alt="">
+                <img src="../img/pagoc.png" alt="">
+                <img src="../img/pagod.png" alt="">
+                <img src="../img/pagoe.png" alt="">
+                <img src="../img/pagof.png" alt="">
+             </article>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

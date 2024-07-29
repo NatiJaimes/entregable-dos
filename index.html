@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- link al proyecto en whimsical: https://whimsical.com/pre-entrega-1-7ToweWveXQJGBSCePR53Gd -->
+    
+    <title>Home - Pelo x Pelo</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <section class="topbar">
+            <!-- barra superior que sirve para aclarar descuentos o mensajes importantes -->
+            <p>¡Aprovechá las 6 cuotas sin interes!</p>
+        </section>
+        <nav class="navbar navbar-expand-md bg-white">
+            <!-- logo de pagina -->
+            <!-- link al home -->
+            <!-- menu de la pagina -->
+            <!-- cuando sea responsive se va a minimizar en la esquina superior izquierda -->
+            <!-- la idea es que quede fijo en la parte superior todo el tiempo -->
+            <div class="container-fluid">
+                <a class="navbar-brand ps-3" href="index.html"><img src="img/logodos.png" alt="Logo de la Marca"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pe-5 ps-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-bold align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/pelucas.html">PELUCAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/apliques.html">APLIQUES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/quienessomos.html">QUIENES SOMOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="carrousel">
+            <!-- carrousel de imagenes -->
+            <!-- van a aparecer una por una y se van a ir cambiando entre las 3 -->
+            <!-- posibilidad de mantenerlo asi como está tambien -->
+            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/carrousela.png" class="d-block mx-auto w-100" alt="Foto cortinas de pelo castañas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrouselb.png" class="d-block mx-auto w-100" alt="Foto cortinas de pelo rubias">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/carrouselc.png" class="d-block mx-auto w-100" alt="Foto peluca">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="presentacion">
+            <!-- texto introductorio y logo o foto en la misma linea -->
+            <h1>Pelo x Pelo</h1>
+            <article class="grid-presentacion">
+                <div class="grid-pres-1">
+                    <img src="img/logouno.png" alt="Logo de la marca">
+                </div>
+                <div class="grid-pres-2">
+                    <p>En Pelo x Pelo, nos especializamos en la confección de cortinas de pelo, toppers y pelucas. 
+                    Trabajamos exclusivamente con cabello de alta calidad, garantizando un aspecto natural y duradero. </p>
+                </div>
+                <div class="grid-pres-3">
+                    <p>Nuestra misión es brindar personalización y confort a cada uno de nuestros clientes, adaptando nuestros productos 
+                    a sus necesidades individuales. Además, nuestros productos son fáciles de usar y no afectan la salud capilar.</p>
+                </div>
+            </article>
+        </section>
+        <section class="productos">
+            <!-- introduccion a productos en una linea -->
+            <!-- pelucas a la izq apliques a la derecha -->
+            <!-- foto de cada uno y link a pagina correspondiente -->
+            <!-- sobre foto de cada producto va a ir un p con el nombre de la seccion a donde se redirige -->
+            <!-- responsive uno abajo del otro-->
+            <h2>Nuestros Productos</h2>
+            <article class="linksproductos">
+                <div class="pelucas">
+                    <a href="pages/pelucas.html"><img src="img/pelucas.png" alt="Pelucas"></a>
+                    <p>Pelucas</p>
+                </div>
+                <div class="apliques">
+                    <a href="pages/apliques.html"><img src="img/apliques.png" alt="Apliques"></a>
+                    <p>Apliques</p>
+                </div>
+            </article>
+        </section>
+        <section class="fotosig">
+            <!-- 3 o 4 fotos de ig y link a sus correspondientes publicaciones en ig -->
+            <!-- depende de la cantidad que se use y su tamaño veré si agregar un carrousel o no -->
+            <h2>Seguínos en Instagram</h2>
+            <article class="mosaico">
+                <a class="instagramuno" href="https://www.instagram.com/p/C2IyEwqJmIO/?hl=es&img_index=1"><img src="img/iga.png" alt=""></a>
+                <a class="instagramdos" href="https://www.instagram.com/p/C2npzGApe_-/?hl=es&img_index=1"><img src="img/igb.png" alt=""></a>
+                <a class="instagramtres" href="https://www.instagram.com/p/Ctcwu-OJdg9/?hl=es"><img src="img/igc.png" alt=""></a>
+                <a class="instagramcuatro" href="https://www.instagram.com/p/C75FgXGPXFD/?hl=es&img_index=2"><img src="img/igd.png" alt=""></a>
+            </article>
+            <!-- botón centrado debajo de las fotos -->
+            <article class="formatoboton">
+                <a href="https://www.instagram.com/peloxpelo.arg/?hl=es" class="boton">VER MÁS</a>
+            </article>
+        </section>
+    </main>
+    <footer class="pie">
+        <!-- division en 3 columnas -->
+        <!-- en responsive es uno abajo del otro -->
+        <section class="columuno">
+            <!-- datos de contacto -->
+            <h4>CONTACTANOS</h4>
+            <article class="linea">
+                <img src="img/iconoa.png" alt="Teléfono" class="logocontacto">
+                <p class="datocontacto">541112341234</p>
+            </article>
+            <article class="linea">
+                <img src="img/iconob.png" alt="Correo Electronico" class="logocontacto">
+                <p class="datocontacto">peloxpelo@gmail.com</p>
+            </article>
+            <article class="linea">
+                <img src="img/iconoc.png" alt="Ubicación" class="logocontacto">
+                <p class="datocontacto">Palermo, CABA, Argentina</p>
+            </article>
+        </section>
+        <section class="columdos">
+            <!-- menu navegación -->
+            <h4>NAVEGACIÓN</h4>
+            <article class="menupie">
+                <ul>
+                    <li>
+                        <!-- link al home -->
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <!-- link a pelucas -->
+                        <a href="pages/pelucas.html">PELUCAS</a>
+                    </li>
+                    <li>
+                        <!-- link a apliques -->
+                        <a href="pages/apliques.html">APLIQUES</a>
+                    </li>
+                    <li>
+                        <!-- link a contacto -->
+                        <a href="pages/contacto.html">CONTACTO</a>
+                    </li>
+                    <li>
+                        <!-- link a quienes somos -->
+                        <a href="pages/quienessomos.html">QUIENES SOMOS</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="columtres">
+            <!-- link a redes sociales -->
+            <article class="rrss">
+                <h4>REDES SOCIALES</h4>
+                <a href="https://www.instagram.com/peloxpelo.arg/?hl=es"><img src="img/redesa.png" alt="Instagram" class="redes"></a>
+                <a href="https://www.facebook.com/profile.php?id=100087120391569"><img src="img/redesb.png" alt="Facebook" class="redes"></a>
+            </article>
+            <!-- medios de pago -->
+             <article class="mediospago">
+                <h4>MEDIOS DE PAGO</h4>
+                <img src="img/pagoa.png" alt="">
+                <img src="img/pagob.png" alt="">
+                <img src="img/pagoc.png" alt="">
+                <img src="img/pagod.png" alt="">
+                <img src="img/pagoe.png" alt="">
+                <img src="img/pagof.png" alt="">
+             </article>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
