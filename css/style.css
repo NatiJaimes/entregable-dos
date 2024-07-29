@@ -412,6 +412,13 @@ h1 {
     top: 15%;
 }
 
+/* ------------------------------------------------------------------------- */
+/* MEDIAS QUERIES */
+/* ------------------------------------------------------------------------- */
+
+
+/* para modificar el logo en el nav bar cuando es resolución mobile */
+/* tambien queria mover el boton un poco del borde derecho */
 @media screen and (max-width: 767px) {
     .container-fluid img {
         width: 80%;
@@ -422,7 +429,7 @@ h1 {
     }
 }
 
-
+/* cambios para resoluciones desktop */
 
 @media screen and (min-width: 768px) {
     /* estilos generales */
@@ -573,7 +580,7 @@ h1 {
     .quienessomos p {
         font-style: italic;
     }
-    
+
     .mision {
         display: flex;
         align-items: center;
@@ -605,5 +612,4 @@ h1 {
     .mision:hover .textomision {
         opacity: 1;
     }
-
 }
